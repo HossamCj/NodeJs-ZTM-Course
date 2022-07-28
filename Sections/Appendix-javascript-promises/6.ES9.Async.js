@@ -17,4 +17,6 @@ Promise.all(urls.map(url => {
 
     })
     .catch(err => console.log('umm, Fix it', err))
+    // The new thing here in the whole code is finally() that you can do something
+    // After whatever the code going to resolve or reject
     .finally(() => console.log('Extra data'))
